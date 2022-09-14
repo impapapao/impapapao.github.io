@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+body {
+  background-color: aquamarine;
+}
+
+.menu-title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 40px;
+}
+ .row {
+  width: 100%;
+  position: relative;
+ }
+
+.container {
+  position: relative;
+  top: 60px;
+  margin: 15px;
+}
+
+.box {
+  border: 2px solid black;
+  background-color: bisque;
+  margin: 15px;
+}
+
+.box-title {
+  top: 0;
+}
+
+.title-content {
+  float: right;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  position: relative;
+  top: 0;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 30px;
+}
+.content {
+  height: auto;
+  margin: 20px;
+  margin-top: 30px;
+  padding-top: 40px;
+  background-color: bisque;
+  font-size: 20px;
+  text-align: justify;
+}
+
+#color-chicken {
+  background-color: #dbe9f4;
+}
+
+#color-beef {
+  background-color: #d2042d;
+}
+
+#color-sushi {
+  background-color: #ff7f7f;
+}
+  /********** for laptop **********/
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+      width: 33.33%;
+    }
+  }
+  /********** for tablet  **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6, .col-md-12 {
+      float: left;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    .col-md-12 {
+      margin-left: -10px;
+      width: 100%;
+    }
+    .title3 {
+      width: 60%;
+    }
+  }
+  
+  /*********** for Mobile **********/
+  @media (min-width: 0px) and (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+      width: 100%;
+    }
+    .title-item{
+      margin-right: 30px;
+    }
+  }
